@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #292b30;
+}
+
+aside {
+    flex: 1;
+}
+
+main {
+    flex: 4;
+}
+
+#tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tabs li {
+    padding: 10px;
+    color: white;
+    text-transform: lowercase;
+}
+
+#tabs li.active {
+    background-color: #393c43;
+    font-weight: bold;
+}
+
+#tabs li:not(.active) {
+    cursor: pointer;
+}
+
+#content {
+    height: 90vh;
+    position: relative;
+}
+
+#messages {
+    height: 100%;
+    background-color: #393c43;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+
+#writing {
+    position: absolute;
+    bottom: 0;
+    background-color: #393c43;
+    color: white;
+}
+
+#messages div {
+    margin: 0;
+    padding: 15px;
+    color: white;
+}
+
+form {
+    display: flex;
+}
+
+#username {
+    color: #9BD1F9;
+    font-size: 15px;
+}
+
+#date {
+    color: #9BD1F9;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(230, 236, 240, 0.4);
+}
+
+#contentMsg {
+    font-size: 20px;
+}
+
+#msgContainer {
+    border-bottom: 1px solid rgba(230, 236, 240, 0.4);
+}
+
+#name, #message {
+    padding: 15px;
+    color: white;
+}
+
+#name {
+    flex: 1;
+    background-color: #40444b;
+    border: none;
+}
+
+#name:hover {
+    background-color: #333438;
+}
+
+#message {
+    flex: 5;
+    border: none;
+    background-color: #40444b;
+    border-left: 1px solid rgba(230, 236, 240, 0.4);
+}
+
+#message:hover {
+    background-color: #333438;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #9BD1F9;
+    color: black;
+}
+
+button:hover {
+    background-color: #5cb7fd;
+    color: black;
+    cursor: pointer;
+}
+
+input#name:focus, #message:focus {
+    outline: none;
+}
